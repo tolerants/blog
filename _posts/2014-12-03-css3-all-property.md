@@ -21,9 +21,9 @@ title:  "CSS3 All property"
 все свойства элемента такими же как у родителя.
 
 ```
-.class {
-    all: inherit;
-}
+    .class {
+        all: inherit;
+    }
 ```
 
 ### initial
@@ -34,20 +34,20 @@ title:  "CSS3 All property"
 несмотря на стиль элемента p.
 
 ```
-<p style="color: red">
-   <em style="color: initial">
-      Lorem ipsum
-   </em>
-</p>
+    <p style="color: red">
+       <em style="color: initial">
+          Lorem ipsum
+       </em>
+    </p>
 ```
 
 Стоит помнить, что сначение css свойства берется независимо от элемента для которого оно применяется. Поэтому все
 привычные браузерные свойства, например font-weight: bold для h1, будут сбрасываться до дефолтных значений.
 
 ```
-<h1 style="font-weight: initial">
-    Lorem ipsum
-</p>
+    <h1 style="font-weight: initial">
+        Lorem ipsum
+    </p>
 ```
 
 Значение поддерживается во всех современных браузерах, кроме IE.
